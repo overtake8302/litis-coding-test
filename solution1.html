@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #count {
+           font-size: xx-large;
+        }
+    </style>
+
+    <script>
+
+        let count = 0;
+
+        function clickCount () {
+
+            count++;
+            const target = document.getElementById("count");
+            target.innerText = count;
+        }
+    </script>
+
+</head>
+<body>
+    
+    <div id="box"  onclick="clickCount()">
+        <div id="count"></div>
+    </div> 
+    
+
+</body>
+</html>
